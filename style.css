@@ -1,0 +1,130 @@
+*{
+  font-family: 'Montserrat', 'sans-serif';
+}
+#navbarNav{
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-weight: 600;
+    font-style: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 150px;
+    padding: 0px 50px 0px 50px;
+}
+.nav-link{
+    color: black;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    color: rgb(77, 212, 212);
+}
+.about{
+    margin: 33vh 0vh ;
+    padding: 5em;
+  
+
+}
+.intro{
+    animation: fadeIn 2s;
+}
+#intro1{
+ 
+}
+.down{
+    text-decoration: none;
+    color:#00B98E;
+    animation: fadeIn 2s;
+    border: 2px solid #00B98E;
+    padding: 5px;
+}
+
+.down:hover{
+    box-shadow: 1px 1px black;
+    /* color:black;
+    border: 2px solid black; */
+    background-color:#00B98E;
+    color: white;
+
+
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes one {
+    from {text-align: start; }
+
+    to { text-align: end; }
+  }
+
+  @keyframes filli {
+    0% { background-color:#00B98E; 
+         color: white;
+       }
+    100% { 
+         background-color: white;
+         color: #00B98E; 
+        }
+  }
+
+  
+  .myself{
+    
+    padding-top: 100px;
+    /* height: 50vh; */
+    background-color: #00B98E;
+    color: white;
+    animation: fadeIn 2s;
+
+  }
+
+  .para{
+    letter-spacing: 1px;
+  }
+
+  .resume{
+    height: 20px;
+    font-size: 0.4em;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 3px;
+  }
+
+  .resume:hover{
+    box-shadow: 1px 1px white;
+
+  }
+
+  #resume_button{
+    text-decoration: none;
+    color:white;
+    border: 2px solid white;
+    padding: 3px;
+  }
+  #resume_button:hover{
+    /* box-shadow: 1px 1px black;
+    color: black;
+    border: 2px solid black;
+    background-color: white; */
+    background-color: white;
+    color: #00B98E;
+  }
+
+  #source_code_button{
+    color: #00B98E;
+    border: 2px solid #00B98E;
+  }
+
+  #source_code_button:hover{
+    background-color:#00B98E;
+    color: white;
+  }
+
+  .footer-icon:hover{
+    transform: translateY(-3px);
+  }
