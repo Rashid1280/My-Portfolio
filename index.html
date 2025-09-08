@@ -3,117 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio 2024</title>
+    <title>Mohammed Mubasshir Rashid - Portfolio 2024</title>
+    
     <!-- Bootstrap CDN -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Scratch css -->
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
-     <!-- favicon -->
-     <link rel="icon" type="image/png" href="images/icons8-portfolio-48.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons8-portfolio-48.png">
 
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- bootstrap icons -->
+    
+    <!-- Bootstrap Icons -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- Logo -->
 
-    <section id="logo">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-transparent">
-        <div class="container-fluid fixed-top">
-          <a class="navbar-brand px-3 py-4" href="index.html"
-            ><img src="images/logo.png" alt="" height="50px"
-          /></a>
+  <body id="top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#top">
+          <img src="images/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <!-- landing Section -->
+    <section class="hero-section d-flex align-items-center" id="about">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="hero-title mb-3" id="intro1">
+              Hi, This Is
+              <span class="text-primary">Mohammed Mubasshir Rashid</span>
+            </h1>
+            <h2 class="hero-subtitle mb-4" id="intro2">
+              Fullstack Web Developer
+            </h2>
+            <a href="#down" class="btn btn-outline-primary btn-lg hero-btn">
+              More About Me
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Greetings -->
-
-    <div class="about container-fluid text-center px-2" id="about">
-      <h1 class="intro mt-0" id="intro1" style="font-size: calc(2rem + 1vw)">
-        Hi, This Is
-        <span style="color: #00b98e">Mohammed Mubasshir Rashid</span>
-      </h1>
-      <h1 class="intro" id="intro2" style="font-size: calc(2rem + 1vw)">
-        Fullstack Web Developer
-      </h1>
-      <span id="box">
-        <a
-          href="#down"
-          class="btn down"
-          style="font-size: 20px; font-weight: bold"
-          >More About Me</a>
-      </span>
-    </div>
-
-    <!-- About me -->
-
-    <div
-      class="myself container-fluid align-items-center text-center py-5"
-      id="down">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <h2
-            class="heading display-4 mb-3"
-            style="font-size: calc(1.5rem + 1vw); font-weight: 600">
-            ABOUT ME
-          </h2>
+    <!-- About Section -->
+    <section class="about-section py-5" id="down">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-4">ABOUT ME</h2>
+            <p class="lead about-text mb-4">
+              B.Tech (IT, 2023) — Aspiring Full-Stack JavaScript developer. Built and deployed MERN projects; skilled in React, Node.js, Express and MongoDB. Seeking a junior web developer role.
+            </p>
+            <a
+              href="/Assets/Md.-Mubasshir-Rashid-Resume.pdf"
+              class="btn btn-primary btn-lg"
+              target="_blank"
+            >
+              <i class="bi bi-file-earmark-text me-2"></i>View Resume
+            </a>
+          </div>
         </div>
-        <div
-          class="col-12 col-md-10 text-center"
-          style="font-size: calc(2rem + 1vw)">
-          <p class="para lead">
-            As a motivated Fullstack Web Developer, I am eager to apply my
-            knowledge and skills to contribute to a dynamic team's success. I
-            look forward to collaborating with professionals in the industry,
-            while continuously learning and striving for excellence in
-            delivering innovative web solutions.
-          </p>
-        </div>
-
-        <span>
-          <a
-            href="/Assets/Md. Mubasshir Rashid_B.Tech_IT_2023.pdf"
-            id="resume_button"
-            class="btn mt-3"
-            target="_blank"
-            style="font-size: 17px; font-weight: bold"
-            >View Resume</a
-          >
-        </span>
       </div>
-    </div>
+    </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
+    <section class="projects-section py-5" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title">PROJECTS</h2>
+          </div>
+        </div>
 
-    <div class="container-fluid py-5 text-center">
-      <div class="row justify-content-center">
-        <div class="col-11 col-md-10">
-          <h2
-            class="display-4 mb-5"
-            style="font-size: calc(1.2rem + 1vw); font-weight: 700"
-          >
-            PROJECTS
-          </h2>
-          <div class="row">
-            <!-- strs left (text) -->
-            <div class="col-12 col-md-5 text-start mb-3">
-              <h4 class="h4" style="font-weight: 700; letter-spacing: 1px">
-                Short Term Rental Service
-              </h4>
-              <p class="para" style="letter-spacing: 1px; color: black">
+        <!-- Project 1: Short Term Rental Service -->
+        <div class="row mb-5 project-row">
+          <div class="col-lg-6 mb-4">
+            <div class="project-content">
+              <h4 class="project-title">Short Term Rental Service</h4>
+              <p class="project-description">
                 Spearheaded the creation of a dynamic platform facilitating
                 connections between property owners and potential renters.
                 Designed and implemented an intuitive user interface using HTML,
@@ -121,151 +121,227 @@
                 backend infrastructure with Node.js and Express.js, integrating
                 MongoDB for efficient data management.
               </p>
-              <a
-                href="https://github.com/Rashid1280/House-rental-service"
-                target="_blank"
-                class="btn"
-                id="source_code_button"
-                style="font-size: 17px; font-weight: bold"
-                >Source Code</a
-              >
+              <div class="project-tech mb-3">
+                <span class="badge bg-secondary me-2">HTML</span>
+                <span class="badge bg-secondary me-2">CSS</span>
+                <span class="badge bg-secondary me-2">JavaScript</span>
+                <span class="badge bg-secondary me-2">Node.js</span>
+                <span class="badge bg-secondary me-2">Express</span>
+                <span class="badge bg-secondary me-2">MongoDB</span>
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/Rashid1280/House-rental-service"
+                  target="_blank"
+                  class="btn btn-outline-primary me-2"
+                >
+                  <i class="bi bi-github me-2"></i>Source Code
+                </a>
+                <a
+                  href="https://short-term-rental-service.onrender.com/"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="bi bi-eye me-2"></i>Live Demo
+                </a>
+              </div>
             </div>
-            <!-- strs Right (image) -->
-            <div class="col-12 col-md-7 text-center">
-              <img
-                src="/images/strs.png"
-                alt="Project Image"
-                class="img-fluid"
-                style="border: 2px solid black"
-              />
+          </div>
+          <div class="col-lg-6">
+            <div id="strsCarousel" class="carousel slide project-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/images/strs.png" class="d-block w-100 project-img" alt="STRS Main">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/strs.png" class="d-block w-100 project-img" alt="STRS Dashboard">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/strs.png" class="d-block w-100 project-img" alt="STRS Features">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#strsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#strsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#strsCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#strsCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#strsCarousel" data-bs-slide-to="2"></button>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- ayush left (text) -->
-
-            <div class="col-12 col-md-5 text-start mb-3 mt-5">
-              <h4 class="h4" style="font-weight: 700; letter-spacing: 1px">
-                Nearby AYUSH Hospitals
-              </h4>
-              <p class="para" style="letter-spacing: 1px; color: black">
+        <!-- Project 2: Nearby AYUSH Hospitals -->
+        <div class="row mb-5 project-row">
+          <div class="col-lg-6 order-lg-2 mb-4">
+            <div class="project-content">
+              <h4 class="project-title">Nearby AYUSH Hospitals</h4>
+              <p class="project-description">
                 Created an intuitive frontend web application using HTML, CSS,
-                JavaScript, and Bootstrap.Implemented Google Maps API to enable
+                JavaScript, and Bootstrap. Implemented Google Maps API to enable
                 real-time location tracking of nearby AYUSH hospitals.
               </p>
-              <a
-                href="https://github.com/Rashid1280/Nearby-AYUSH-Hospitals"
-                target="_blank"
-                class="btn"
-                id="source_code_button"
-                style="font-size: 17px; font-weight: bold"
-                >Source Code</a
-              >
+              <div class="project-tech mb-3">
+                <span class="badge bg-secondary me-2">HTML</span>
+                <span class="badge bg-secondary me-2">CSS</span>
+                <span class="badge bg-secondary me-2">JavaScript</span>
+                <span class="badge bg-secondary me-2">Bootstrap</span>
+                <span class="badge bg-secondary me-2">Google Maps API</span>
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/Rashid1280/Nearby-AYUSH-Hospitals"
+                  target="_blank"
+                  class="btn btn-outline-primary me-2"
+                >
+                  <i class="bi bi-github me-2"></i>Source Code
+                </a>
+                <a
+                  href="https://ayushhospitals.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  <i class="bi bi-eye me-2"></i>Live Demo
+                </a>
+              </div>
             </div>
-
-            <!-- ayush Right (image) -->
-
-            <div class="col-12 col-md-7 text-center mt-md-5">
-              <img
-                src="/images/Ayush.png"
-                alt="Project Image"
-                class="img-fluid"
-                style="border: 2px solid black"
-              />
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div id="ayushCarousel" class="carousel slide project-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/images/Ayush.png" class="d-block w-100 project-img" alt="AYUSH Main">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/Ayush.png" class="d-block w-100 project-img" alt="AYUSH Map">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/Ayush.png" class="d-block w-100 project-img" alt="AYUSH Results">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#ayushCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ayushCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#ayushCarousel" data-bs-slide-to="2"></button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- more projects (i hope) -->
+        <div class="row mb-5 project-row d-none">
+          <div class="col-lg-6 mb-4">
+            <div class="project-content">
+              <h4 class="project-title">Project Name</h4>
+              <p class="project-description">
+                description
+              </p>
+              <div class="project-tech mb-3">
+                <span class="badge bg-secondary me-2">html</span>
+                <span class="badge bg-secondary me-2">css</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" target="_blank" class="btn btn-outline-primary me-2">
+                  <i class="bi bi-github me-2"></i>Source Code
+                </a>
+                <a href="#" target="_blank" class="btn btn-primary">
+                  <i class="bi bi-eye me-2"></i>Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            carousel
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Contact Details-->
-
-    <section id="contact">
-      <div
-        class="myself container-fluid align-items-center text-center py-5"
-        id="down"
-      >
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12">
-            <h2
-              class="heading display-4 mb-3"
-              style="font-size: calc(1.5rem + 1vw); font-weight: 600"
-            >
-              CONTACT
-            </h2>
-          </div>
-          <div
-            class="col-12 col-md-10 text-center"
-            style="font-size: calc(2rem + 1vw)"
-          >
-            <p class="para lead">Call me at +91-9131960460</p>
-          </div>
-
-          <span>
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-4">CONTACT</h2>
+            <div class="contact-info mb-4">
+              <p class="contact-phone mb-3">
+                <i class="bi bi-telephone me-2"></i>
+                <a href="tel:+919131960460">+91-9131960460</a>
+              </p>
+              <p class="contact-email">
+                <i class="bi bi-envelope me-2"></i>
+                <a href="mailto:rashidmubasshir@gmail.com">rashidmubasshir@gmail.com</a>
+              </p>
+            </div>
             <a
               href="mailto:rashidmubasshir@gmail.com"
-              id="resume_button"
-              class="btn mt-3 px-3"
-              style="font-size: 17px; font-weight: bold"
-              >Email</a
+              class="btn btn-primary btn-lg"
             >
-          </span>
+              <i class="bi bi-envelope me-2"></i>Send Email
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Profiles -->
-
-    <section id="profile">
-      <div
-        class="footer-section d-flex flex-column justify-content-center align-items-center"
-        style="
-          background-color: #383434;
-          height: 30vh;
-          color: #fff;
-          position: relative;
-        "
-      >
-        <!-- Up Arrow -->
-        <a
-          href="#top"
-          class="up-arrow mb-3 footer-icon"
-          style="font-size: 2rem; color: #fff; text-decoration: none"
-        >
-          <i class="bi bi-arrow-up"></i>
-        </a>
-
-        <!-- Social Icons -->
-        <div class="social-icons d-flex gap-5" style="margin-bottom: 1rem">
-          <a
-            href="https://www.linkedin.com/in/mubasshir-rashid-92423a248"
-            target="_blank"
-            class="footer-icon transition text-decoration-none"
-            style="color: #fff; font-size: 2rem; text-decoration: none"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/Rashid1280"
-            target="_blank"
-            class="footer-icon transition text-decoration-none"
-            style="color: #fff; font-size: 2rem; text-decoration: none"
-          >
-            <i class="bi bi-github"></i>
-          </a>
-        </div>
-
-        <br />
-
-        <!-- Copyright Text -->
-        <div
-          class="copyright-text"
-          style="font-size: 0.9rem; text-align: center; opacity: 0.7"
-        >
-          &copy; 2024 - Developed by Mohammed Mubasshir Rashid
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center text-md-end">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/mubasshir-rashid-92423a248"
+                target="_blank"
+                class="social-link me-3"
+                title="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Rashid1280"
+                target="_blank"
+                class="social-link me-3"
+                title="GitHub"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="#top"
+                class="social-link back-to-top"
+                title="Back to Top"
+              >
+                <i class="bi bi-arrow-up"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+
+      // Auto-start carousels with slower interval
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        new bootstrap.Carousel(carousel, {
+          interval: 3000,
+          wrap: true
+        });
+      });
+    </script>
   </body>
 </html>
